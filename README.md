@@ -1,6 +1,5 @@
-
- ![alt text](https://raw.githubusercontent.com/LeticiaGenadeze/Minha-Trilha/main/assets/img/logo.png?token=ACDEOQ37IKHSRPJHQN3VFXTBWCWEU)
-  # Encontre a sua melhor trilha de conhecimento!
+![alt text](https://raw.githubusercontent.com/LeticiaGenadeze/Minha-Trilha/main/assets/img/logo.png?token=ACDEOQ37IKHSRPJHQN3VFXTBWCWEU)
+# Encontre a sua melhor trilha de conhecimento!
   
   
  <p>Este projeto consiste em propor uma solução para o seguinte problema:</p>
