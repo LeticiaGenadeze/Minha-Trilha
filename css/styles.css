@@ -15,7 +15,7 @@ a {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     height: auto;
     margin: 0 auto;
 }
@@ -147,7 +147,9 @@ a {
 }
 
 .section-indicator {
-    border-bottom: 1px solid rgb(39, 37, 37);;
+    border-bottom: 1px solid rgb(39, 37, 37);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .section-indicator h2 {
@@ -165,7 +167,7 @@ a {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin-bottom: 70px !important;    
+    margin-bottom: 70px !important;
 }
 
 .content-details {
@@ -177,7 +179,7 @@ a {
     padding: 0;
 }
 
-.section-destination {     
+.section-destination {
     padding-bottom: 30px;
     display: flex;
 }
@@ -185,7 +187,7 @@ a {
 .section-destination h1 {
     color: #fff;
     text-align: center;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
     padding-top: 30px;
 }
 
@@ -201,7 +203,7 @@ a {
     display: flex;
 }
 
-.section-destination-item-transiction{
+.section-destination-item-transiction {
     padding-top: 30px;
 }
 
@@ -232,8 +234,8 @@ a {
     padding-top: 50px;
     color: #fff;
     text-align: center;
-    background: rgb(56,72,78);
-    background: radial-gradient(circle, rgba(56,72,78,1) 0%, rgba(40,52,72,1) 100%);
+    background: rgb(56, 72, 78);
+    background: radial-gradient(circle, rgba(56, 72, 78, 1) 0%, rgba(40, 52, 72, 1) 100%);
 }
 
 .section-operation h2 {
@@ -325,12 +327,15 @@ a {
 }
 
 .partners {
+    float: left;
+    display: block;
+    width: 100%;
     color: #fff;
     text-align: center;
-    padding-bottom: 250px;
+    padding-bottom: 70px;
     padding-top: 50px;
-    background: rgb(56,72,78);
-    background: radial-gradient(circle, rgba(56,72,78,1) 0%, rgba(40,52,72,1) 100%);
+    background: rgb(56, 72, 78);
+    background: radial-gradient(circle, rgba(56, 72, 78, 1) 0%, rgba(40, 52, 72, 1) 100%);
 }
 
 .partners-content {
@@ -346,7 +351,7 @@ a {
     height: 70px !important;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .partners-content-item img {
@@ -359,8 +364,12 @@ a {
     float: left;
 }
 
-.footer{
-padding-top: 50px;
+.footer {
+    width: 100%;
+    height: auto;
+    float: left;
+    display: block;
+    padding-top: 50px;
 }
 
 .footer p {
@@ -368,23 +377,24 @@ padding-top: 50px;
     text-align: center;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.social-icons{
+.social-icons {
     text-align: right;
 }
 
-.social-icons a{
+.social-icons a {
     text-decoration: none;
 }
-.social-icons i{
+
+.social-icons i {
     margin-right: 1em;
     font-size: 1.1em;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .social-icons i:hover {
@@ -392,18 +402,110 @@ padding-top: 50px;
 
 }
 
-.btn-action{
+.btn-action {
     text-align: center;
     padding-top: 30px;
     margin-bottom: -2.5em;
 }
 
-.btn-action-choose{
+.btn-action-choose {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.footer-copy{
+.footer-copy {
     padding-bottom: 20px;
+}
+
+@media (max-width: 760px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 10px;
+    }
+
+    .logo img {
+        max-width: 200px;
+    }
+
+    .navbar-menu {
+        margin: 0;
+        padding: 0;
+    }
+
+    .section-home {
+        height: 70vh;
+    }
+
+    .section-home h1 {
+        font-size: 25px;
+    }
+
+    .section-home p {
+        font-size: 16px;
+    }
+
+    .container-video-home {
+        max-width: 400px;
+    }
+
+    .section-indicator-content {
+        max-width: 800px;
+        margin: 0 15px;
+    }
+
+    .content-details h3 {
+        font-size: 20px;
+    }
+
+    .section-destination {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .section-destination-item img {
+        width: 100px;
+        margin: 20px 0 20px 10px;
+    }
+
+    .section-operation {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-operation-cards .card {
+        float: left;
+    }
+
+    .section-operation-cards .card p {
+        font-size: 12px;
+    }
+
+    .section-choose {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-choose-content-details .col-3 {
+        display: none;
+    }
+
+    .section-choose-content-details .col-7 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .partners-content {
+        margin-left: 0;
+        padding-left: 15px;
+    }
+
+    .partners-content .col-2 {
+        width: 40%;
+        float: left;
+    }
 }
